@@ -82,7 +82,7 @@ if (document.getElementById("CallButtonWidget")) {
     if (!elem) {
       const iframeElement = document.createElement("iframe");
       iframeElement.src =
-        import.meta.env.VITE_WIDGET_URL + "widgetcontent.html";
+        import.meta.env.VITE_WIDGET_URL + "/widgetcontent.html";
       iframeElement.id = "widget_iframe_element";
       iframeElement.allow = "microphone";
       iframeElement.style.display = "block";
