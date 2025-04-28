@@ -7,6 +7,12 @@
     <title>Web Call Widget</title>
     <link rel="stylesheet" href="src/widget.css">
     <script>
+        window.radioChanged = async function (element) {
+            const newTarget = element.value;
+
+            // Post the message to the parent window to change the target
+            parent.window.postMessage({ type: 'targetChange', target: newTarget }, '*');
+        };
 
         window.startCall = async function () {
             window.connectedSuccessfully = false;
@@ -167,6 +173,18 @@
     <div class="header-container">
         Initiate an audio conversation with us from your web browser
     </div>
+
+    
+    <div class="call-type-selection">
+        <label>
+       <input type="radio" id="salesRadio" name="callType" value="Sales" checked onchange="window.radioChanged(this)"> Sales
+     </label>
+     <label style="margin-left: 16px;">
+       <input type="radio" id="serviceRadio" name="callType" value="Service" onchange="window.radioChanged(this)"> Service
+     </label>
+     </div>
+    
+     
 
     <div class="timing-container" id="timingcontainer"></div>
 
