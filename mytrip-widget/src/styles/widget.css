@@ -75,7 +75,7 @@
 .main-content-container {
     margin: 0;
     background: #e5e8eb;
-    padding: 24px;
+    padding: 10px;
 }
 
 .logo-icon-container {
@@ -101,6 +101,19 @@
     text-align: center;
     letter-spacing: 0.15px;
     color: #3D5B68;
+}
+
+.footer-container {
+    width: 100%;
+    height: fit-content;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #810101;
 }
 
 .timing-container {
