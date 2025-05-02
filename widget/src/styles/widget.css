@@ -75,7 +75,7 @@
 .main-content-container {
     margin: 0;
     background: #e5e8eb;
-    padding: 24px;
+    padding: 15px;
 }
 
 .logo-icon-container {
@@ -93,7 +93,7 @@
 .header-container {
     width: 100%;
     height: fit-content;
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -174,7 +174,6 @@
     border-radius: 16px;
 
     width: 265px;
-    height: 100%;
 
     padding: 24px;
 
@@ -226,7 +225,7 @@
 .call-type-selection {
     width: 100%;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 12px;
     font-family: 'Montserrat', sans-serif;
     color: #3D5B68;
     font-size: 16px;
